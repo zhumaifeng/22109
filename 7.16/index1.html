@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>mydemo</title>
+        <style type="text/css">
+            body,p {margin: 0; padding: 0;}
+            html,body {height: 100%;}
+            div {width: 400px; margin: 20px auto; border: 3px black solid;
+                padding: 8px;}
+            div p {text-indent: 34px;}
+        </style>
+        <script type="text/javascript">
+         window.onload = function() {
+            var oDiv = document.getElementsByTagName("div");
+            /* 点击div，显示innerHTML*/
+            for ( var i = 0; i < oDiv.length; i++) {
+                oDiv[i].onclick = function(){
+                    var oP = this.getElementsByTagName("p")[0].innerHTML;
+                    alert(oP);
+                }
+            }
+         }
+            
+        </script>
+    </head>
+    <body>
+        <div>
+        <p><strong>1</strong>徐梦婷哈皮</p>
+        </div>
+        
+        <div>
+        <p>我是徐梦婷他爹</p>
+        </div>
+        
+        <div>
+        <p>小猪在北京等你</p>
+        </div>
+        
+        <div>
+        <p>加油啊，小徐</p>
+        </div>
+    </body>
+</html>
